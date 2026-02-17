@@ -73,6 +73,7 @@ include 'includes/header.php';
             </a>
 
             <!-- Crossfit Card -->
+            <a href="crossfit.php" class="fitness-card">
             <div class="fitness-card">
                 <div class="card-overlay"></div>
                 <img 
@@ -92,7 +93,7 @@ include 'includes/header.php';
                     </svg>
                 </div>
             </div>
-
+            </a>
         </div>
     </main>
 
