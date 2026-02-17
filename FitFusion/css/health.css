@@ -1,0 +1,144 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+}
+
+
+
+/* Hero Section */
+.hero {
+    background-color: #f5b800;
+    width: 100%;
+    padding: 5rem 2rem;
+}
+
+.hero-content {
+    max-width: 56rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.125rem;
+    color: #000000;
+}
+
+/* Health Tips Section */
+.health-tips {
+    background-color: #000000;
+    width: 100%;
+    padding: 5rem 2rem;
+}
+
+.tips-container {
+    max-width: 56rem;
+    margin: 0 auto;
+}
+
+.tips-container h2 {
+    font-size: 1.875rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+.tips-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.tip-card {
+    background-color: #101828;
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.tip-card h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #f5b800;
+    margin-bottom: 0.75rem;
+}
+
+.tip-card p {
+    color: #d1d5dc;
+    line-height: 1.7;
+    font-size: 0.9375rem;
+}
+
+/* Reminder Banner */
+.reminder-banner {
+    background-color: #f5b800;
+    width: 100%;
+    padding: 3rem 2rem;
+}
+
+.reminder-content {
+    max-width: 56rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.reminder-content p {
+    font-size: 1.125rem;
+    color: #000000;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .footer-columns {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .tips-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .footer-columns {
+        grid-template-columns: 1fr;
+    }
+}

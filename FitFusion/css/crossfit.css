@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  background-color: #353535;
+  color: #ffffff;
+}
+
+/* Crossfit Page */
+.crossfit-page {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 69px; /* Account for fixed nav */
+  overflow: hidden;
+}
+
+/* Background Image */
+.page-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.page-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0 3rem;
+}
+
+.hero-title {
+  background-color: #E3B212;
+  border-radius: 141.5px;
+  padding: 1.5rem 4rem;
+  text-align: center;
+}
+
+.hero-title h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  color: #000000;
+  margin: 0;
+  line-height: 1;
+}
+
+/* Workout Container */
+.workout-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Workout Row */
+.workout-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+/* Workout Card */
+.workout-card {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 552 / 624;
+}
+
+.workout-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 133px;
+  overflow: hidden;
+  border: 1px solid #D3A200;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.workout-card:hover .workout-image {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(227, 178, 18, 0.3);
+}
+
+.workout-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Workout Overlay */
+.workout-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 50%, transparent 100%);
+  padding: 3rem 2rem 2.5rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.workout-overlay h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  color: white;
+  text-align: center;
+  margin: 0;
+  line-height: 1.2;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .workout-container {
+    padding: 2rem 40px;
+    gap: 2rem;
+  }
+
+  .workout-row {
+    gap: 2rem;
+  }
+
+  .hero-title h1 {
+    font-size: 48px;
+  }
+
+  .hero-title {
+    padding: 1rem 3rem;
+  }
+
+  .workout-overlay h2 {
+    font-size: 36px;
+  }
+
+  .workout-image {
+    border-radius: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .crossfit-page {
+    padding-top: auto;
+  }
+
+  .hero-section {
+    padding: 2rem 0 1.5rem;
+  }
+
+  .hero-title {
+    padding: 0.75rem 2rem;
+  }
+
+  .hero-title h1 {
+    font-size: 36px;
+  }
+
+  .workout-container {
+    padding: 1.5rem 20px;
+    gap: 1.5rem;
+  }
+
+  .workout-row {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .workout-card {
+    aspect-ratio: 4 / 3;
+  }
+
+  .workout-image {
+    border-radius: 40px;
+  }
+
+  .workout-overlay {
+    padding: 2rem 1.5rem 1.5rem;
+  }
+
+  .workout-overlay h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title h1 {
+    font-size: 28px;
+  }
+
+  .hero-title {
+    padding: 0.5rem 1.5rem;
+  }
+
+  .workout-overlay h2 {
+    font-size: 24px;
+  }
+
+  .workout-container {
+    gap: 1rem;
+  }
+
+  .workout-row {
+    gap: 1rem;
+  }
+}

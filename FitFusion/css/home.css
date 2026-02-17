@@ -1,0 +1,243 @@
+/* Home Page Specific Styles */
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                url('../images/gym.png') center/cover no-repeat;
+    padding: 6rem 2rem;
+    text-align: left;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 3rem;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero-text {
+    font-size: 1.125rem;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.btn-explore {
+    background-color: #f0b100;
+    color: #000000;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn-explore:hover {
+    background-color: #d89c00;
+}
+
+/* Stats Section */
+.stats-section {
+    background-color: #1a2332;
+    padding: 3rem 2rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.stat-card {
+    text-align: center;
+}
+
+.stat-icon {
+    width: 64px;
+    height: 64px;
+    background-color: #f0b100;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    color: #000000;
+}
+
+.stat-icon svg {
+    width: 32px;
+    height: 32px;
+}
+
+.stat-value {
+    color: #ffffff;
+    font-size: 2.25rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: #99a1af;
+    font-size: 0.875rem;
+}
+
+/* Mission Section */
+.mission-section {
+    background-color: #f0b100;
+    padding: 4rem 2rem;
+}
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.mission-card {
+    text-align: center;
+    background: transparent;
+    border: none;
+    padding: 0 2rem;
+    box-shadow: none;
+}
+
+
+
+.mission-badge {
+    display: inline-block;
+    background-color: #000000;
+    color: #f0b100;
+    padding: 0.5rem 2rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.mission-text {
+    color: #000000;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* Features Section */
+.features-section {
+    background-color: #000000;
+    padding: 5rem 2rem;
+}
+
+.section-title-center {
+    color: #ffffff;
+    font-size: 2.75rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.feature-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto 4rem;
+}
+
+.feature-image {
+    border-radius: 10px;
+    overflow: hidden;
+    height: 400px;
+}
+
+.feature-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.feature-content {
+    padding: 0 1rem;
+}
+
+.feature-title {
+    color: #f0b100;
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.feature-text {
+    color: #99a1af;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+/* Why Join Section */
+.why-join-section {
+    background: linear-gradient(to bottom, #f0b100, #d08700);
+    padding: 4rem 2rem;
+}
+
+.why-join-content {
+    max-width: 896px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.why-join-text {
+    color: #000000;
+    font-size: 1rem;
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
+}
+
+/* Responsive Design for Home Page */
+@media (max-width: 1024px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .mission-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .feature-block {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content {
+        padding-left: 0;
+        text-align: center;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-title-center {
+        font-size: 2rem;
+    }
+}
