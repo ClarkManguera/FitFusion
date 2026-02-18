@@ -11,6 +11,13 @@
     <!-- Header -->
 <header class="header">
     <div class="container header-container">
+        <style>
+    .logo .logo-img {
+        width: 150px;
+        height: auto;
+    }
+</style>
+
 
         <div class="logo">
             <a href="index.php">
